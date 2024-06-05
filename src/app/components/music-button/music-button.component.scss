@@ -5,10 +5,11 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    opacity: .75;
+    opacity: .5;
 }
 
 .button img {
     z-index: 999;
-    padding: 15px;
+    padding: 20px;
+    width: 25px;
 }
