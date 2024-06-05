@@ -1,0 +1,12 @@
+<ng-template [ngIf]="visible">
+    <div class="alert-container">
+        <div class="alert">
+            <p>
+                {{message}}
+            </p>
+            <button (click)="close()">
+                Aceptar
+            </button>
+        </div>
+    </div>
+</ng-template>

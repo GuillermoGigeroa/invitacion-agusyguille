@@ -7,10 +7,12 @@ import { LandingModule } from './pages/home/home.module';
 import { DataService } from './shared/data-service.service';
 import { NavigationService } from './shared/services/navigation.service';
 import { UtilsService } from './shared/services/utils.service';
+import { AlertComponent } from './components/alert/alert.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    AlertComponent,
   ],
   imports: [
     BrowserModule,

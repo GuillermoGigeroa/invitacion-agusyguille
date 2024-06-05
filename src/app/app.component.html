@@ -1,2 +1,7 @@
 <router-outlet></router-outlet>
 <app-music-button></app-music-button>
+<app-alert
+    [message]="notMobileMessage"
+    [visible]="!isMobile"
+    (event)="closeAlert()">
+</app-alert>

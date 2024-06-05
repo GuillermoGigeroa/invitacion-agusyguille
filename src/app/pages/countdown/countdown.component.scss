@@ -63,7 +63,7 @@ p {
         p {
             margin: 0;
             text-align: center;
-            animation-name: animation-in;
+            animation-name: animation-focus;
             animation-iteration-count: infinite;
             animation-duration: 2s;
             transition: .1s;
@@ -71,7 +71,7 @@ p {
     }
 }
 
-@keyframes animation-in {
+@keyframes animation-focus {
     0% {
         opacity: 0.8;
     }
