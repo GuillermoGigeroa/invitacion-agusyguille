@@ -18,7 +18,6 @@ def push():
     execute('git push')
 
 def __init__():
-    clear()
     build()
     addAll()
     commit()
