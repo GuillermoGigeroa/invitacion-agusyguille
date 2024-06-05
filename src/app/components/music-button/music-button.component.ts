@@ -9,7 +9,7 @@ export class MusicButtonComponent {
   readonly audio: HTMLAudioElement = new Audio('assets/sounds/perfect-instrumental-ed-sheeran.mp3');
   playMusic = false;
 
-  click() {
+  toggle() {
     this.playMusic = !this.playMusic;
     this.toggleMusic();
   }
