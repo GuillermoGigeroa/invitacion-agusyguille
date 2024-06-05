@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { Pages } from './shared/model/pages.enum';
 
 const routes: Routes = [{
-  path: Pages.HOME, loadChildren: () => import('./pages/landing/landing.module').then(m => m.LandingModule),
+  path: Pages.HOME, loadChildren: () => import('./pages/home/landing.module').then(m => m.LandingModule),
 }];
 
 @NgModule({

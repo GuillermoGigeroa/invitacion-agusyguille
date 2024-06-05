@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./music-button.component.scss']
 })
 export class MusicButtonComponent {
-  readonly audio: HTMLAudioElement = new Audio('assets/sounds/love-of-my-life.mp3');
+  readonly audio: HTMLAudioElement = new Audio('assets/sounds/perfect-instrumental-ed-sheeran.mp3');
   playMusic = false;
 
   click() {
