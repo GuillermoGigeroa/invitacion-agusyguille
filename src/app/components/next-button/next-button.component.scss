@@ -1,3 +1,5 @@
+@import "../../../assets/scss/styles";
+
 .button {
     position: absolute;
     bottom: 0;
@@ -10,4 +12,28 @@
     width: 40px;
     opacity: .9;
     z-index: 99999;
+}
+
+.animated {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    animation-name: animation-focus;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    transition: .01s;
+}
+
+$translate-value: 10px;
+
+@keyframes animation-focus {
+    0% {
+        transform: translateY($translate-value);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY($translate-value);
+    }
 }

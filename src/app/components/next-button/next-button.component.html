@@ -1,5 +1,6 @@
 <div class="button" (click)="click()">
     <img
+        [ngClass]="{'animated': animated}"
         [style]="'padding-bottom: '+paddingBottom+';padding-top:'+paddingTop+';'"
         src="assets/img/icons/next.svg"
         alt="">

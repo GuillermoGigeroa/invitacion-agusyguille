@@ -10,6 +10,8 @@ export class NextButtonComponent {
   paddingBottom = '0';
   @Input()
   paddingTop = '0';
+  @Input()
+  animated = false;
   @Output()
   event = new EventEmitter();
   click() {
