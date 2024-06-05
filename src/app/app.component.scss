@@ -4,6 +4,8 @@
     background-color: #FFFFFF;
     width: 100%;
     height: 100%;
+    margin-top: 204px;
+    margin-bottom: 204px;
 }
 
 .text {
@@ -25,6 +27,9 @@
     font-size: 18px;
     font-style: normal;
     text-align: center;
+    .anuncio {
+        margin-top: 2em;
+    }
 }
 
 .ampersand {
@@ -43,13 +48,15 @@
 }
 
 .presenting-header {
-    display: flex;
-    justify-content: flex-start;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .presenting-footer {
-    display: flex;
-    justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .frame {
