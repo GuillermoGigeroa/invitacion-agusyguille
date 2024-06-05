@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --port 4200 --disable-host-check true --host 0.0.0.0 -o",
-    "build": "ng deploy --base-href=/wedding-invitation/"
+    "build": "ng build --output-path docs --base-href /wedding-invitation/"
   },
   "private": true,
   "dependencies": {
