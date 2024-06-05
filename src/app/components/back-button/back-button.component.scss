@@ -1,0 +1,14 @@
+.button {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.button img {
+    width: 40px;
+    opacity: .9;
+    z-index: 99999;
+    transform: rotate(180deg)
+}
