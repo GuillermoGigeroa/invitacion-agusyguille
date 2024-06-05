@@ -1,0 +1,8 @@
+<div class="button" (click)="click()">
+    <ng-template [ngIf]="playMusic">
+        <img width="50px" src="assets/img/icons/music-note-slash.svg" alt="-♥">
+    </ng-template>
+    <ng-template [ngIf]="!playMusic">
+        <img width="50px" src="assets/img/icons/music-note.svg" alt="+♥">
+    </ng-template>
+</div>

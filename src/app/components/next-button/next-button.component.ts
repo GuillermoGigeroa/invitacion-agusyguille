@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-next-button',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./next-button.component.scss']
 })
 export class NextButtonComponent {
-
+  @Output()
+  event = new EventEmitter();
+  click() {
+    this.event.emit();
+  }
 }

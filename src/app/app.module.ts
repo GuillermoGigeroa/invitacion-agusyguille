@@ -4,12 +4,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { LandingModule } from './pages/landing/landing.module';
-import { NextButtonComponent } from './components/next-button/next-button.component';
+import { DataService } from './shared/data-service.service';
+import { NavigationService } from './shared/services/navigation.service';
+import { UtilsService } from './shared/services/utils.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NextButtonComponent,
   ],
   imports: [
     BrowserModule,
@@ -17,7 +18,11 @@ import { NextButtonComponent } from './components/next-button/next-button.compon
     SharedModule,
     LandingModule,
   ],
-  providers: [],
+  providers: [
+    UtilsService,
+    NavigationService,
+    DataService,
+  ],
   bootstrap: [
     AppComponent
   ]

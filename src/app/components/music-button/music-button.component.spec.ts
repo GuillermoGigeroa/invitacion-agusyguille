@@ -1,17 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { LandingComponent } from './landing.component';
 
-describe('LandingComponent', () => {
-  let component: LandingComponent;
-  let fixture: ComponentFixture<LandingComponent>;
+import { MusicButtonComponent } from './music-button.component';
+
+describe('MusicButtonComponent', () => {
+  let component: MusicButtonComponent;
+  let fixture: ComponentFixture<MusicButtonComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LandingComponent ]
+      declarations: [ MusicButtonComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(LandingComponent);
+    fixture = TestBed.createComponent(MusicButtonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
