@@ -8,7 +8,10 @@ import { NavigationService } from 'src/app/shared/services/navigation.service';
   styleUrls: ['./countdown.component.scss']
 })
 export class CountdownComponent {
-  constructor(private navigationService: NavigationService) {}
+
+  constructor(
+    private navigationService: NavigationService,
+  ) {}
 
   back() {
     this.navigationService.navigateTo(Pages.HOME);

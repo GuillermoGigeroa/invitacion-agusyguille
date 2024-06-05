@@ -2,8 +2,8 @@
     <div class="card">
         <div class="number">
             <img src="assets/img/countdown-circle.svg" alt="">
-            <p class="value">
-                261
+            <p class="value" [ngClass]="{'fade-in': days}">
+                {{days}}
             </p>
         </div>
         <p class="label">
@@ -13,8 +13,8 @@
     <div class="card">
         <div class="number">
             <img src="assets/img/countdown-circle.svg" alt="">
-            <p class="value">
-                8
+            <p class="value" [ngClass]="{'fade-in': hours}">
+                {{hours}}
             </p>
         </div>
         <p class="label">
@@ -24,8 +24,8 @@
     <div class="card">
         <div class="number">
             <img src="assets/img/countdown-circle.svg" alt="">
-            <p class="value">
-                38
+            <p class="value" [ngClass]="{'fade-in': minutes}">
+                {{minutes}}
             </p>
         </div>
         <p class="label">
@@ -35,8 +35,8 @@
     <div class="card">
         <div class="number">
             <img src="assets/img/countdown-circle.svg" alt="">
-            <p class="value">
-                55
+            <p class="value" [ngClass]="{'fade-in': seconds}">
+                {{seconds}}
             </p>
         </div>
         <p class="label">

@@ -28,3 +28,18 @@
     }
 }
 
+.fade-in {
+    animation-name: fade-in-animation;
+    animation-iteration-count: 1;
+    animation-duration: 1.5s;
+    transition: .5s;
+}
+
+@keyframes fade-in-animation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
