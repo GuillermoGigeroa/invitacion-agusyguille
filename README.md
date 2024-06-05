@@ -1,2 +1,2 @@
-## Module generation with lazy loading - Angular
-- ng generate module {name} --route {name} --module app.module
+## Proyecto Angular para invitación de casamiento
+© Copyright 2024 Guillermo Gigeroa & Agustina Pessano
