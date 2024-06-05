@@ -1,0 +1,27 @@
+$height: 204px;
+
+.flowers {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    background-image: url(../../../assets/img/trama.png);
+}
+
+.flowers-up {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.flowers-down {
+    display: flex;
+    justify-content: flex-end;
+}
+
+img {
+    height: $height;
+}
