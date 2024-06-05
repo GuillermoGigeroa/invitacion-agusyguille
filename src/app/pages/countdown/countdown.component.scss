@@ -13,10 +13,10 @@ p {
 }
 
 .box1 {
+    height: 65%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 65%;
     h2 {
         margin-top: 0em;
         margin-bottom: .5em;
@@ -46,11 +46,11 @@ p {
 }
 
 .box2 {
+    height: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 40%;
+    justify-content: flex-start;
     width: 100%;
     background-color: white;
     p {
@@ -60,6 +60,10 @@ p {
         display: flex;
         margin-top: 10px;
     }
+}
+
+#queremos {
+    margin-top: 7%;
 }
 
 #faltan {

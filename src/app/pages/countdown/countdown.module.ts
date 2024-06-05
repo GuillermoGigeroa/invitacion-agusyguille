@@ -6,7 +6,6 @@ import { FormsModule } from '@angular/forms';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { CountdownShowComponent } from 'src/app/components/countdown-show/countdown-show.component';
 
-
 @NgModule({
   imports: [
     CountdownRoutingModule,
