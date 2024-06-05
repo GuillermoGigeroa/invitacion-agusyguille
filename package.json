@@ -4,10 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --port 4200 --disable-host-check true --host 0.0.0.0 -o",
-    "deploy": "ng deploy",
-    "build": "ng build --configuration production --base-href https://guillermogigeroa.github.io/wedding-invitation/",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "build": "ng deploy --base-href=/wedding-invitation/"
   },
   "private": true,
   "dependencies": {
