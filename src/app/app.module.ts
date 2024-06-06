@@ -8,6 +8,7 @@ import { DataService } from './shared/data-service.service';
 import { NavigationService } from './shared/services/navigation.service';
 import { UtilsService } from './shared/services/utils.service';
 import { AlertComponent } from './components/alert/alert.component';
+import { DragScreenComponent } from './components/drag-screen/drag-screen.component';
 
 @NgModule({
   declarations: [
