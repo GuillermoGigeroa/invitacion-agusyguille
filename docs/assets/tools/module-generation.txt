@@ -1,0 +1,2 @@
+## Module generation with lazy loading - Angular
+ng generate module app --route app --module app.module

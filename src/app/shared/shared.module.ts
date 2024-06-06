@@ -5,7 +5,6 @@ import { SharedRoutingModule } from './shared-routing.module';
 import { NextButtonComponent } from '../components/next-button/next-button.component';
 import { MusicButtonComponent } from '../components/music-button/music-button.component';
 import { BackButtonComponent } from '../components/back-button/back-button.component';
-import { DragScreenComponent } from '../components/drag-screen/drag-screen.component';
 
 @NgModule({
     imports: [
@@ -17,13 +16,11 @@ import { DragScreenComponent } from '../components/drag-screen/drag-screen.compo
         NextButtonComponent,
         BackButtonComponent,
         MusicButtonComponent,
-        DragScreenComponent,
     ],
     exports: [
         NextButtonComponent,
         BackButtonComponent,
         MusicButtonComponent,
-        DragScreenComponent,
     ]
 })
 export class SharedModule { }
