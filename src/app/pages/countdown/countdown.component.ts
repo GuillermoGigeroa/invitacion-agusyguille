@@ -16,4 +16,8 @@ export class CountdownComponent {
   back() {
     this.navigationService.navigateTo(Pages.HOME);
   }
+
+  next() {
+    this.navigationService.navigateTo(Pages.HOWTO);
+  }
 }
