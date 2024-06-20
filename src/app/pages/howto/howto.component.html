@@ -42,7 +42,7 @@
 <ng-template [ngIf]="googleMaps">
     <div class="google-maps-menu">
         <div class="button-container">
-            <button class="button openButton">Abrir en aplicación de Google Maps</button>
+            <button class="button openButton" (click)="openInApp()">Abrir en aplicación de Google Maps</button>
             <div class="closeButton" (click)="closeMap()">
                 <img src="assets/img/icons/close.svg" alt="X">
             </div>

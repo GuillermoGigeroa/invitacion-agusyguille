@@ -1,4 +1,4 @@
-import { AfterContentChecked, Component, Input } from '@angular/core';
+import { AfterContentChecked, Component, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-google-maps',

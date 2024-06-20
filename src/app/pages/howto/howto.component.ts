@@ -33,6 +33,13 @@ export class HowtoComponent {
     this.googleMaps = false;
   }
 
+  openInApp() {
+    // const url = `https://maps.google.com/maps?q=${this.currentAddress}&t=&z=20&ie=UTF8&iwloc=&output=embed`
+    // const redirectUrl = `intent:${url}#Intent;end`;
+    // window.location.href = redirectUrl;
+    window.open(`google.navigation:q=${this.currentAddress}&mode=d` , '_system');
+  }
+
   //Funcionalidad para comportamiento en swipe de pantalla
 
   touchStartX = 0;
