@@ -11,8 +11,8 @@
         <p>
             Saravi 2494, La Lonja, Pilar.
         </p>
-        <button>
-            <span class="title">
+        <button class="button">
+            <span class="title" (click)="toggleMap(ceremonyAddress)">
                 CÓMO LLEGAR
             </span>
         </button>
@@ -32,12 +32,27 @@
         <p>
             El Benteveo 3357, La Lonja, Pilar.
         </p>
-        <button>
-            <span class="title">
+        <button class="button">
+            <span class="title" (click)="toggleMap(partyAddress)">
                 CÓMO LLEGAR
             </span>
         </button>
     </div>
 </div>
+<ng-template [ngIf]="googleMaps">
+    <div class="google-maps-menu">
+        <div class="button-container">
+            <button class="button openButton">Abrir en aplicación de Google Maps</button>
+            <div class="closeButton" (click)="closeMap()">
+                <img src="assets/img/icons/close.svg" alt="X">
+            </div>
+        </div>
+        <div class="google-maps-container">
+            <div class="maps-container">
+                <app-google-maps [input]="currentAddress!"></app-google-maps>
+            </div>
+        </div>
+    </div>
+</ng-template>
 <app-back-button [paddingTop]="'10px'" (event)="back()"></app-back-button>
 <app-next-button [paddingBottom]="'10px'" (event)="next()"></app-next-button>

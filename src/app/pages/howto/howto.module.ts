@@ -4,6 +4,8 @@ import { HowtoRoutingModule } from './howto-routing.module';
 import { HowtoComponent } from './howto.component';
 import { FormsModule } from '@angular/forms';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { GoogleMapsComponent } from 'src/app/components/google-maps/google-maps.component';
+import { SafePipe } from 'src/app/components/google-maps/safe.pipe';
 
 @NgModule({
   imports: [
@@ -14,9 +16,13 @@ import { SharedModule } from 'src/app/shared/shared.module';
   ],
   declarations: [
     HowtoComponent,
-  ],
+    GoogleMapsComponent,
+    SafePipe,
+    ],
   exports: [
     HowtoComponent,
+    GoogleMapsComponent,
+    SafePipe,
   ]
 })
 export class HowtoModule { }

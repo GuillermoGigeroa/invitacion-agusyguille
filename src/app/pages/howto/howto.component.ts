@@ -8,6 +8,12 @@ import { NavigationService } from 'src/app/shared/services/navigation.service';
   styleUrls: ['./howto.component.scss']
 })
 export class HowtoComponent {
+  readonly ceremonyAddress = 'Saravi 2494, La Lonja, Pilar, Argentina';
+  readonly partyAddress = 'El Benteveo 3357, La Lonja, Pilar, Argentina';
+
+  googleMaps = true;
+  currentAddress = this.ceremonyAddress;
+
   constructor(private navigationService: NavigationService) {}
 
   back() {
@@ -16,6 +22,15 @@ export class HowtoComponent {
 
   next() {
     // this.navigationService.navigateTo(Pages.COUNTDOWN);
+  }
+
+  toggleMap(address: string) {
+    this.currentAddress = address;
+    this.googleMaps = !this.googleMaps;
+  }
+
+  closeMap() {
+    this.googleMaps = false;
   }
 
   //Funcionalidad para comportamiento en swipe de pantalla
