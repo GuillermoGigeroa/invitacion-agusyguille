@@ -11,8 +11,8 @@ export class HowtoComponent {
   readonly ceremonyAddress = 'Saravi 2494, La Lonja, Pilar, Argentina';
   readonly partyAddress = 'El Benteveo 3357, La Lonja, Pilar, Argentina';
 
-  googleMaps = true;
-  currentAddress = this.ceremonyAddress;
+  googleMaps = false;
+  currentAddress?: string;
 
   constructor(private navigationService: NavigationService) {}
 
