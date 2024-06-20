@@ -3,7 +3,7 @@ def execute(command):
     os.system(command)
 
 def clear(): 
-    execute('clear | cls')
+    execute('cls')
 
 def build():
     execute('npm run build')
