@@ -5,7 +5,8 @@ import { Pages } from './shared/model/pages.enum';
 const routes: Routes = [
   { path: Pages.HOME, loadChildren: () => import('./pages/home/home.module').then(m => m.LandingModule) },
   { path: Pages.COUNTDOWN, loadChildren: () => import('./pages/countdown/countdown.module').then(m => m.CountdownModule) },
-  { path: Pages.HOWTO, loadChildren: () => import('./pages/howto/howto.module').then(m => m.HowtoModule) }];
+  { path: Pages.HOWTO, loadChildren: () => import('./pages/howto/howto.module').then(m => m.HowtoModule) },
+  { path: Pages.CONFIRMATION, loadChildren: () => import('./pages/confirmation/confirmation.module').then(m => m.ConfirmationModule) }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

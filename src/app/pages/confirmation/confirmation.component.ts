@@ -3,16 +3,11 @@ import { Pages } from 'src/app/shared/model/pages.enum';
 import { NavigationService } from 'src/app/shared/services/navigation.service';
 
 @Component({
-  selector: 'app-howto',
-  templateUrl: './howto.component.html',
-  styleUrls: ['./howto.component.scss']
+  selector: 'app-confirmation',
+  templateUrl: './confirmation.component.html',
+  styleUrls: ['./confirmation.component.scss']
 })
-export class HowtoComponent {
-  readonly ceremonyAddress = 'Saravi 2494, La Lonja, Pilar, Argentina';
-  readonly partyAddress = 'El Benteveo 3357, La Lonja, Pilar, Argentina';
-
-  googleMaps = false;
-  currentAddress?: string;
+export class ConfirmationComponent {
 
   constructor(private navigationService: NavigationService) {}
 
@@ -21,20 +16,7 @@ export class HowtoComponent {
   }
 
   next() {
-    this.navigationService.navigateTo(Pages.CONFIRMATION);
-  }
-
-  toggleMap(address: string) {
-    this.currentAddress = address;
-    this.googleMaps = !this.googleMaps;
-  }
-
-  closeMap() {
-    this.googleMaps = false;
-  }
-
-  openInApp() {
-    window.open(`google.navigation:q=${this.currentAddress}&mode=d` , '_system');
+    // this.navigationService.navigateTo(Pages.CONFIRMATION);
   }
 
   //Funcionalidad para comportamiento en swipe de pantalla
@@ -86,7 +68,6 @@ export class HowtoComponent {
 
   onSwipeUp(): void {
     // console.log('Swiped up');
-    this.next();
   }
   
   onSwipeDown(): void {

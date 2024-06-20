@@ -3,4 +3,5 @@ export enum Pages {
     HOME = 'home',
     COUNTDOWN = 'countdown',
     HOWTO = 'howto',
+    CONFIRMATION = 'confirmation',
 }
