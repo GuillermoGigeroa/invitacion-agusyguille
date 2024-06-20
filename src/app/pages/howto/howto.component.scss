@@ -1,0 +1,33 @@
+@import "../../../assets/scss/styles";
+
+.content {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+        line-height: 19.5px;
+        font-weight: 300;
+        text-align: center;
+    }
+    .title {
+        margin-bottom: 5px;
+    }
+    img {
+        width: 140px;
+    }
+    button {
+        color: $white-color;
+        background-color: $orange-color;
+        border: none;
+        margin-top: 1em;
+        cursor: pointer;
+        padding: 5px 10px 5px 10px;
+        border-radius: 25px;
+    }
+    span.title {
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 16.5px;
+    }
+}

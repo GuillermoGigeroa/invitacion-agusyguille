@@ -14,6 +14,10 @@ export class HowtoComponent {
     this.navigationService.navigateTo(Pages.COUNTDOWN);
   }
 
+  next() {
+    // this.navigationService.navigateTo(Pages.COUNTDOWN);
+  }
+
   //Funcionalidad para comportamiento en swipe de pantalla
 
   touchStartX = 0;
